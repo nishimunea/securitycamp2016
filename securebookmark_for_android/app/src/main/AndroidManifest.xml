@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.csrf.seccamp2016.securebookmark">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:label="SecureBookmark"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Question1Activity" />
+        <activity android:name=".Question2Activity" />
+        <activity android:name=".Question3Activity" />
+        <activity android:name=".Question4Activity" />
+        <activity android:name=".Question5Activity" />
+        <activity android:name=".ProvisionActivity" />
+
+    </application>
+
+</manifest>
