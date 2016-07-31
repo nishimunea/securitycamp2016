@@ -15,6 +15,10 @@ class Question1ViewController: QuestionBaseViewController {
         openUrl(initialURL)
     }
     
+    override func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+        super.webView(webView, didFinishNavigation: navigation)
+    }
+    
     func setPasswordManager(webView:WKWebView) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let username:AnyObject! = userDefaults.objectForKey("username")
